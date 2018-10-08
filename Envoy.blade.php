@@ -8,5 +8,5 @@ $webPath = "/home/wwwroot/php71/domain/onedrive/web/";
 cd {{$repertory}}
 git pull origin master
 chown -R mostwin.mostwin ./*
-rsync -avz  {{$repertory}} --delete  --exclude 'cache/'   --exclude '.git/'   {{$webPath}}
+rsync -avz  {{$repertory}} --delete  --exclude 'cache/' --exclude 'config/'   --exclude '.git/'   {{$webPath}}
 @endtask
